@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import "./styles.css";
+import style from "./styles.css";
+
+
+
+
 
 const emojiDictonary = {
   "😊": "Smiling",
@@ -34,22 +38,50 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Welcome</h1>
-      <input onChange={emojiInputHandler} />
-      <h2> {meaning} </h2>
+     
+      
+    
+      <h1 className="header">Emoji Translator</h1>
+      
+    
+      <input className="text-area" onChange={emojiInputHandler} />
+      <h2 className=""> {meaning} </h2>
 
-      <h3>Emoji we know</h3>
-      {emojisWeKnow.map(function (emoji) {
-        return (
-          <span
-            onClick={() => emojiClickHandler(emoji)}
-            key={emoji}
-            style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
-          >
-            {emoji}
-          </span>
-        );
-      })}
+      <h3 className="link">Emoji we know</h3>
+      <div className="Card">
+        {emojisWeKnow.map(function (emoji) {
+          return (
+            <span
+              onClick={() => emojiClickHandler(emoji)}
+              key={emoji}
+              style={{ fontSize: "2rem", padding: "0.5rem", cursor: "pointer" }}
+            >
+              {emoji}
+            </span>
+          );
+        })}
+      </div>
+      <footer class="footer">
+      <div class="main">
+        <div class="footer-header">SocialMedia</div>
+        <ul class="social-links list-non-bullet">
+          <li class="list-item-inline">
+            <a class="footer_link" href="https://github.com/Sushmita12345">Github</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="footer_link" href="https://twitter.com/">Twitter</a>
+          </li>
+          <li class="list-item-inline">
+            <a class="footer_link" href="https://Linkedin.com/in/sushmita-gupta-636929195/">Linkedin</a>
+            
+          </li>
+        </ul>
+      </div>
+
+    </footer>
+      
     </div>
+    
+    
   );
 }
