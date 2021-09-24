@@ -103,3 +103,25 @@ a {
   background-color: #374151;
   
 }
+
+@media only screen and (max-width: 700px) {
+  .App{
+    width: 75vw;
+    height: 100%;
+  }
+  .header {
+    font-size: 1.5rem;
+  }
+  .text-area {
+    height: 4vh;
+    width: 30vw;
+  }
+
+  .link {
+    width: 45vw;
+  }
+  .Card {
+    width: 60vw;
+  }
+   
+}
