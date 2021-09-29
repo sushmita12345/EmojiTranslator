@@ -14,7 +14,14 @@ const emojiDictonary = {
   "😘": "Kissing",
   "🤣": "Rolling on the Floor Laughing Face",
   "😠": "Angry",
-  "😟": "Sad"
+  "😟": "Sad",
+  "🎂": "Birthday Cake",
+  "🍫": "Chocolate bar",
+  "🍨": "Ice-Cream",
+  "🍔": "Hamburger",
+  "🍕": "Pizza",
+  "🌹": "Rose",
+  "🐻": "Bear"
 };
 
 var emojisWeKnow = Object.keys(emojiDictonary);
