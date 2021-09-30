@@ -14,3 +14,4 @@ A web app build with HTML, CSS and Javascript, in which you can translate differ
 To clone the repository open the terminal and run below command:</br>
 <pre>git clone https://github.com/sushmita12345/EmojiTranslator</pre>
 
+Live at: https://translateemoji.netlify.app/
